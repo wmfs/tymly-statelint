@@ -1,6 +1,7 @@
 This document specifies an extension to a JSON object called a "State Machine".
 A State Machine MUST have a string field named "namespace".
 A State Machine MUST have a string field named "name".
+A State Machine MAY have an nonempty-string-array field named "categories".
 A State Machine MAY have an nonempty-object-array field named "restrictions"; each element is a "Restriction".
 A Restriction MUST have a string field named "roleId".
 A Restriction MUST have a nonempty-string-array field named "allows".

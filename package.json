@@ -23,7 +23,7 @@
     "tymly-statelint": "bin/tymly-statelint.js"
   },
   "dependencies": {
-    "@wmfs/statelint": "1.4.0"
+    "@wmfs/statelint": "1.4.1"
   },
   "devDependencies": {
     "@semantic-release/changelog": "3.0.0",
