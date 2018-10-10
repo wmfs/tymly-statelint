@@ -1,0 +1,135 @@
+{
+  "Comment": "Fill a Building DNA Form.",
+  "namespace": "RIDGE",
+  "name": "Building DNA",
+  "Version": "1.0",
+  "categories": [
+    "fireSafety"
+  ],
+  "StartAt": "GetAddressLabel",
+  "States": {
+    "GetAddressLabel": {
+      "Type": "Task",
+      "Resource": "module:runFunction",
+      "ResourceConfig": {
+        "functionName": "getAddressLabel"
+      },
+      "Next": "GetBuildingData"
+    },
+    "GetBuildingData": {
+      "Type": "Task",
+      "InputPath": "$.boardKeys.uprn",
+      "Resource": "module:findingById",
+      "ResourceConfig": {
+        "modelId": "building"
+      },
+      "ResultPath": "$.data",
+      "Next": "SetDefaults"
+    },
+    "SetDefaults": {
+      "Type": "Task",
+      "Resource": "module:setContextData",
+      "ResourceConfig": {
+        "$.formData": "$.data",
+        "$.formData.uprn": "$.boardKeys.uprn",
+        "$.formData.addressLabel": "$.addressLabel"
+      },
+      "Next": "AwaitingHumanInput"
+    },
+    "AwaitingHumanInput": {
+      "Type": "Task",
+      "Resource": "module:awaitingHumanInput",
+      "ResourceConfig": {
+        "uiType": "form",
+        "uiName": "wmfs_buildingDna",
+        "dataPath": "$.formData"
+      },
+      "ResultPath": "$.formData",
+      "Next": "UpsertingBuildingDna"
+    },
+    "UpsertingBuildingDna": {
+      "Type": "Task",
+      "InputPath": "$.formData",
+      "Resource": "module:upserting",
+      "ResourceConfig": {
+        "modelId": "buildingDna",
+        "setMissingPropertiesToNull": false
+      },
+      "Next": "UpsertingBuilding"
+    },
+    "UpsertingBuilding": {
+      "Type": "Task",
+      "InputPath": "$.formData",
+      "Resource": "module:upserting",
+      "ResourceConfig": {
+        "modelId": "building",
+        "setMissingPropertiesToNull": false
+      },
+      "Next": "GenerateScheduleId"
+    },
+    "GenerateScheduleId": {
+      "Type": "Task",
+      "Resource": "module:runFunction",
+      "ResourceConfig": {
+        "functionName": "reformatFsec"
+      },
+      "Next": "AddDataToScheduleData"
+    },
+    "AddDataToScheduleData": {
+      "Type": "Task",
+      "Resource": "module:setContextData",
+      "ResourceConfig": {
+        "$.scheduleData.uprn": "$.boardKeys.uprn",
+        "$.scheduleData.rankingName": "$.reformattedCode",
+        "$.scheduleData.range": null,
+        "$.scheduleData.distribution": null,
+        "$.scheduleData.growthCurve": null,
+        "$.scheduleData.updatedRiskScore": null
+      },
+      "Next": "UpdateRankingUPRNs"
+    },
+    "UpdateRankingUPRNs": {
+      "Type": "Task",
+      "InputPath": "$.scheduleData",
+      "Resource": "module:upserting",
+      "ResourceConfig": {
+        "modelId": "rankingUprns",
+        "setMissingPropertiesToNull": false
+      },
+      "Next": "SetRankingInputs"
+    },
+    "SetRankingInputs": {
+      "Type": "Task",
+      "Resource": "module:setContextData",
+      "ResourceConfig": {
+        "$.refreshRanking": {
+          "schema": "wmfs",
+          "category": "$.formData.fsec"
+        }
+      },
+      "Next": "RefreshRanking"
+    },
+    "RefreshRanking": {
+      "Type": "Task",
+      "Resource": "module:refreshRanking",
+      "InputPath": "$.refreshRanking",
+      "Next": "DeltaReindex"
+    },
+    "DeltaReindex": {
+      "Type": "Task",
+      "Resource": "module:deltaReindex",
+      "ResourceConfig": {
+        "core": "tymly"
+      },
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}
