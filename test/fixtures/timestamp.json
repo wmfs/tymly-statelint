@@ -1,0 +1,23 @@
+{
+  "namespace": "test",
+  "name": "timestamp",
+  "Comment": "Blueprint to get timestamp",
+  "Version": "1.0",
+  "StartAt": "Timestamp",
+  "States": {
+    "Timestamp": {
+      "Type": "Task",
+      "Resource": "module:timestamp",
+      "ResultPath": "$.timestamp",
+      "End": true
+    }
+  },
+  "restrictions": [
+    {
+      "roleId": "$authenticated",
+      "allows": [
+        "*"
+      ]
+    }
+  ]
+}

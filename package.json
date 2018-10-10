@@ -1,9 +1,9 @@
 {
-  "name": "@wmfs/statelint",
+  "name": "@wmfs/tymly-statelint",
   "version": "0.0.0-sematically-released",
   "description": "Validator for Amazon States Language with Tymly Extensions JSON.",
   "author": "West Midlands Fire Service",
-  "homepage": "https://github.com/wmfs/statelint#readme",
+  "homepage": "https://github.com/wmfs/tymly-statelint#readme",
   "keywords": [
     "tymly",
     "package",
@@ -13,17 +13,17 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wmfs/statelint.git"
+    "url": "git+https://github.com/wmfs/tymly-statelint.git"
   },
   "bugs": {
-    "url": "https://github.com/wmfs/statelint/issues"
+    "url": "https://github.com/wmfs/tymly-statelint/issues"
   },
   "main": "lib/index.js",
   "bin": {
-    "statelint": "bin/statelint.js"
+    "tymly-statelint": "bin/tymly-statelint.js"
   },
   "dependencies": {
-    "@wmfs/statelint": "1.2.0"
+    "@wmfs/statelint": "1.4.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "3.0.0",
@@ -39,7 +39,7 @@
     "standard": "12.0.1"
   },
   "scripts": {
-    "statelint": "./bin/statelint.js",
+    "tymly-statelint": "./bin/tymly-statelint.js",
     "lint": "standard",
     "test": "nyc mocha && standard",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
