@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "properties": {
+    "functionName": {
+      "type": "string",
+      "description": "Function to call"
+
+    }
+  },
+  "additionalProperties": false,
+  "required": ["functionName"]
+}

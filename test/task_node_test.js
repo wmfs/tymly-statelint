@@ -7,9 +7,14 @@ const path = require('path')
 
 const CheckTaskNode = require('../lib/task_node')
 const testStateResources = {
-  bar: { },
+  bar: {
+    rootDirPath: '.'
+  },
   RunFunction: {
     rootDirPath: path.resolve(__dirname, './fixtures/run-function/')
+  },
+  CallFunction: {
+    rootDirPath: path.resolve(__dirname, './fixtures/call-function/')
   }
 }
 
@@ -125,7 +130,64 @@ describe('TaskNode', () => {
     )
 
     machine.States.A['ResourceConfig'] = {
+      functionName: 'isBanana'
+    }
+    verify(
+      'ResourceConfig validates',
+      machine,
+      0
+    )
+  })
+
+  describe('Task ResourceConfig validation with JSON schema validator', () => {
+    const machine = {
+      StartAt: 'A',
+      States: {
+        A: {
+          Type: 'Task',
+          Resource: 'module:CallFunction',
+          End: true
+        }
+      }
+    }
+
+    verify(
+      'ResourceConfig is missing',
+      machine,
+      1
+    )
+
+    machine.States.A['ResourceConfig'] = {
+      'function': 'getFruitName',
+      'parameter': 'chirimoya'
+    }
+    verify(
+      'ResourceConfig has incorrect fields',
+      machine,
+      1
+    )
+
+    machine.States.A['ResourceConfig'] = {
+      functionName: 100
+    }
+    verify(
+      'ResourceConfig is has incorrect type',
+      machine,
+      1
+    )
+
+    machine.States.A['ResourceConfig'] = {
       functionName: 'isBanana',
+      debug: true
+    }
+    verify(
+      'ResourceConfig is has additional field',
+      machine,
+      1
+    )
+
+    machine.States.A['ResourceConfig'] = {
+      functionName: 'isBanana'
     }
     verify(
       'ResourceConfig validates',
