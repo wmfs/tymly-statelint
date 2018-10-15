@@ -4,11 +4,12 @@ const chai = require('chai')
 chai.use(require('dirty-chai'))
 const expect = chai.expect
 
-const checkTaskNode = require('../lib/task_node')
-
+const CheckTaskNode = require('../lib/task_node')
 const testStateResources = {
   bar: { }
 }
+
+const taskNodeChecker = CheckTaskNode(testStateResources)
 
 describe('TaskNode', () => {
   verify(
@@ -67,13 +68,13 @@ describe('TaskNode', () => {
         }
       }
     },
-    0
+    1
   )
 })
 
 function verify (title, json, count) {
   it(title, () => {
-    const problems = checkTaskNode(json, testStateResources)
+    const problems = taskNodeChecker.check(json)
     problems.forEach(p => console.log(`P: ${p}`))
     expect(problems.length).to.eql(count)
   })
