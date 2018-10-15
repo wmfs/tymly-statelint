@@ -1,0 +1,2 @@
+This document specifies a JSON object called a "RunFunction".
+A RunFunction MUST have a string field named "functionName".

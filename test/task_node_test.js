@@ -3,76 +3,140 @@
 const chai = require('chai')
 chai.use(require('dirty-chai'))
 const expect = chai.expect
+const path = require('path')
 
 const CheckTaskNode = require('../lib/task_node')
 const testStateResources = {
-  bar: { }
+  bar: { },
+  RunFunction: {
+    rootDirPath: path.resolve(__dirname, './fixtures/run-function/')
+  }
 }
 
 const taskNodeChecker = CheckTaskNode(testStateResources)
 
 describe('TaskNode', () => {
-  verify(
-    'No Task State, so no problem',
-    {
-      StartAt: 'A',
-      States: {
-        A: {
-          Type: 'Pass',
-          End: true
+  describe('Task Resource validation', () => {
+    verify(
+      'No Task State, so no problem',
+      {
+        StartAt: 'A',
+        States: {
+          A: {
+            Type: 'Pass',
+            End: true
+          }
         }
-      }
-    },
-    0
-  )
+      },
+      0
+    )
 
-  verify(
-    'Resource isn\'t a Tymly module',
-    {
+    verify(
+      'Resource isn\'t a Tymly module',
+      {
+        StartAt: 'A',
+        States: {
+          A: {
+            Type: 'Task',
+            Resource: 'foo:bar',
+            End: true
+          }
+        }
+      },
+      1
+    )
+
+    verify(
+      'Resource is a Tymly module',
+      {
+        StartAt: 'A',
+        States: {
+          A: {
+            Type: 'Task',
+            Resource: 'module:bar',
+            End: true
+          }
+        }
+      },
+      0
+    )
+
+    verify(
+      'Resource URN references a Tymly module, but that module is not loaded',
+      {
+        StartAt: 'A',
+        States: {
+          A: {
+            Type: 'Task',
+            Resource: 'module:baz',
+            End: true
+          }
+        }
+      },
+      1
+    )
+  })
+
+  describe('Task ResourceConfig validation with J2119 validator', () => {
+    const machine = {
       StartAt: 'A',
       States: {
         A: {
           Type: 'Task',
-          Resource: 'foo:bar',
+          Resource: 'module:RunFunction',
           End: true
         }
       }
-    },
-    1
-  )
+    }
 
-  verify(
-    'Resource is a Tymly module',
-    {
-      StartAt: 'A',
-      States: {
-        A: {
-          Type: 'Task',
-          Resource: 'module:bar',
-          End: true
-        }
-      }
-    },
-    0
-  )
+    verify(
+      'ResourceConfig is missing',
+      machine,
+      1
+    )
 
-  verify(
-    'Resource URN references a Tymly module, but that module is not loaded',
-    {
-      StartAt: 'A',
-      States: {
-        A: {
-          Type: 'Task',
-          Resource: 'module:baz',
-          End: true
-        }
-      }
-    },
-    1
-  )
+    machine.States.A['ResourceConfig'] = {
+      'function': 'getFruitName',
+      'parameter': 'chirimoya'
+    }
+    verify(
+      'ResourceConfig has incorrect fields',
+      machine,
+      3
+    )
+
+    machine.States.A['ResourceConfig'] = {
+      functionName: 100
+    }
+    verify(
+      'ResourceConfig is has incorrect type',
+      machine,
+      1
+    )
+
+    machine.States.A['ResourceConfig'] = {
+      functionName: 'isBanana',
+      debug: true
+    }
+    verify(
+      'ResourceConfig is has additional field',
+      machine,
+      1
+    )
+
+    machine.States.A['ResourceConfig'] = {
+      functionName: 'isBanana',
+    }
+    verify(
+      'ResourceConfig validates',
+      machine,
+      0
+    )
+  })
 })
 
-function verify (title, json, count) {
+function verify (title, src, count) {
+  const json = JSON.parse(JSON.stringify(src))
   it(title, () => {
     const problems = taskNodeChecker.check(json)
     problems.forEach(p => console.log(`P: ${p}`))
