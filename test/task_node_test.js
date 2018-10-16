@@ -18,8 +18,6 @@ const testStateResources = {
   }
 }
 
-const taskNodeChecker = CheckTaskNode(testStateResources)
-
 describe('TaskNode', () => {
   describe('Task Resource validation', () => {
     verify(
@@ -197,9 +195,15 @@ describe('TaskNode', () => {
   })
 })
 
+const nullLogger = {
+  warn: () => {},
+  error: () => {}
+}
+
 function verify (title, src, count) {
   const json = JSON.parse(JSON.stringify(src))
   it(title, () => {
+    const taskNodeChecker = CheckTaskNode(testStateResources, nullLogger)
     const problems = taskNodeChecker.check(json)
     problems.forEach(p => console.log(`P: ${p}`))
     expect(problems.length).to.eql(count)
