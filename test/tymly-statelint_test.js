@@ -8,7 +8,7 @@ const path = require('path')
 
 const tymlyStateLint = require('../lib')
 
-function tests(stateResources) {
+function tests (stateResources) {
   describe(`${stateResources ? 'With' : 'without'} state resource validation`, () => {
     const linter = tymlyStateLint(stateResources)
 
@@ -42,4 +42,3 @@ describe('TymlyStateMachineLint', () => {
   tests()
   tests(stateResources)
 })
-
