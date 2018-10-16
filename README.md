@@ -4,7 +4,7 @@
 
 An npm package providing a validator for [Amazon States Language](https://states-language.net/spec.html) JSON with [Tymly](https://tymly.io/) extensions. Usable from the command-line or as a library.
 
-It builds on `[statelint](https://npmjs.com/package/@wmfs/statelint)`, a package for validating unextended Amazon States Language JSON.
+It builds on [`statelint`](https://npmjs.com/package/@wmfs/statelint), a package for validating unextended Amazon States Language JSON.
 
 ## From the Command-line 
 
