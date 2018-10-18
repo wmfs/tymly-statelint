@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@wmfs/j2119": "1.6.2",
-    "@wmfs/statelint": "1.6.0",
+    "@wmfs/statelint": "1.6.1",
     "ajv": "6.5.4"
   },
   "devDependencies": {
