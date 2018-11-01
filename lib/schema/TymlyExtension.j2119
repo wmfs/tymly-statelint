@@ -7,4 +7,5 @@ A State Machine MAY have an nonempty-string-array field named "categories".
 A State Machine MAY have an nonempty-object-array field named "restrictions"; each element is a "Restriction".
 A Restriction MUST have a string field named "roleId".
 A Restriction MUST have a nonempty-string-array field named "allows".
+A Restriction MAY have a string field named "stateMachineName".
 A Task State MAY have an object field named "ResourceConfig".
