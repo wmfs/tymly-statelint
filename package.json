@@ -13,7 +13,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wmfs/tymly-statelint.git"
+    "url": "https://github.com/wmfs/tymly-statelint.git"
   },
   "bugs": {
     "url": "https://github.com/wmfs/tymly-statelint/issues"
@@ -25,11 +25,11 @@
   "dependencies": {
     "@wmfs/j2119": "1.6.3",
     "@wmfs/statelint": "1.6.2",
-    "ajv": "6.5.4"
+    "ajv": "6.5.5"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "3.0.0",
-    "@semantic-release/git": "7.0.4",
+    "@semantic-release/changelog": "3.0.1",
+    "@semantic-release/git": "7.0.5",
     "chai": "4.2.0",
     "codecov": "3.1.0",
     "conventional-changelog-metahub": "2.0.2",
@@ -37,7 +37,7 @@
     "dirty-chai": "2.0.1",
     "mocha": "5.2.0",
     "nyc": "13.1.0",
-    "semantic-release": "15.9.17",
+    "semantic-release": "15.12.0",
     "standard": "12.0.1"
   },
   "scripts": {
@@ -54,17 +54,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "release": {
-    "analyzeCommits": {
-      "preset": "angular",
-      "releaseRules": [
-        {
-          "type": "build",
-          "scope": "deps",
-          "release": "minor"
-        }
-      ]
-    }
   }
 }
