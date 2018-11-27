@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/wmfs/tymly-statelint/compare/v1.3.3...v1.4.0) (2018-11-27)
+
+
+### 🛠 Builds
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/j2119 requirement from 1.6.3 to 1.6.4 ([7aca4b6](https://github.com/wmfs/tymly-statelint/commit/7aca4b6))
+
 ## [1.3.3](https://github.com/wmfs/tymly-statelint/compare/v1.3.2...v1.3.3) (2018-11-19)
 
 
