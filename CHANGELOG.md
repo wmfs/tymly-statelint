@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/wmfs/tymly-statelint/compare/v1.4.0...v1.5.0) (2018-12-03)
+
+
+### 🛠 Builds
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/statelint requirement from 1.6.2 to 1.7.0 ([0f7d84c](https://github.com/wmfs/tymly-statelint/commit/0f7d84c))
+
 # [1.4.0](https://github.com/wmfs/tymly-statelint/compare/v1.3.3...v1.4.0) (2018-11-27)
 
 
