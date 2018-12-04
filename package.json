@@ -23,7 +23,7 @@
     "tymly-statelint": "bin/tymly-statelint.js"
   },
   "dependencies": {
-    "@wmfs/j2119": "1.6.4",
+    "@wmfs/j2119": "1.7.0",
     "@wmfs/statelint": "1.7.0",
     "ajv": "6.5.5"
   },
