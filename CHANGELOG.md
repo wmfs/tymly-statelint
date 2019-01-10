@@ -1,3 +1,16 @@
+## [1.6.1](https://github.com/wmfs/tymly-statelint/compare/v1.6.0...v1.6.1) (2019-01-10)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** Pick up j2119 1.7.1 so integers are valid for Floats ([82ee242](https://github.com/wmfs/tymly-statelint/commit/82ee242)), closes [wmfs/j2119#37](https://github.com/wmfs/j2119/issues/37)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([6b18704](https://github.com/wmfs/tymly-statelint/commit/6b18704))
+* **deps-dev:** update semantic-release requirement ([a471e82](https://github.com/wmfs/tymly-statelint/commit/a471e82))
+
 # [1.6.0](https://github.com/wmfs/tymly-statelint/compare/v1.5.0...v1.6.0) (2018-12-04)
 
 
