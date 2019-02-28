@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/wmfs/tymly-statelint/compare/v1.6.1...v1.6.2) (2019-02-28)
+
+
+### 🐛 Bug Fixes
+
+* Allow blueprintName & blueprintVersion, allow instigators ([30c9d52](https://github.com/wmfs/tymly-statelint/commit/30c9d52))
+
 ## [1.6.1](https://github.com/wmfs/tymly-statelint/compare/v1.6.0...v1.6.1) (2019-01-10)
 
 
