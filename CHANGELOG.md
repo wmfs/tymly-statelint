@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/wmfs/tymly-statelint/compare/v1.6.2...v1.7.0) (2019-03-19)
+
+
+### ✨ Features
+
+* Extend resource validation to check functions as well as modules. ([2cf2f2a](https://github.com/wmfs/tymly-statelint/commit/2cf2f2a))
+
 ## [1.6.2](https://github.com/wmfs/tymly-statelint/compare/v1.6.1...v1.6.2) (2019-02-28)
 
 
