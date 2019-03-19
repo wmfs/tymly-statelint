@@ -55,14 +55,14 @@ describe('TymlyStateMachineLint', () => {
 
     it('warning when no state resources available', () => {
       const logger = new TestLogger()
-      tymlyStateLint(null, logger)
+      tymlyStateLint(null, null, logger)
 
       expect(logger.logs).to.eql(['State Resources not available. Will not validate Resource or ResourceConfig'])
     })
 
     it('warning when no state resource schema available', () => {
       const logger = new TestLogger()
-      const linter = tymlyStateLint(stateResources, logger)
+      const linter = tymlyStateLint(stateResources, null, logger)
       linter.validate(require(path.join(fixturesDir, 'timestamp.json')))
 
       expect(logger.logs).to.eql(['No ResourceConfig schema available for timestamp'])

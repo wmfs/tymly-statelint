@@ -17,6 +17,9 @@ const testStateResources = {
     rootDirPath: path.resolve(__dirname, './fixtures/call-function/')
   }
 }
+const testFunctions = {
+  fn: true
+}
 
 describe('TaskNode', () => {
   describe('Task Resource validation', () => {
@@ -65,6 +68,21 @@ describe('TaskNode', () => {
     )
 
     verify(
+      'Resource is a Tymly function',
+      {
+        StartAt: 'A',
+        States: {
+          A: {
+            Type: 'Task',
+            Resource: 'function:fn',
+            End: true
+          }
+        }
+      },
+      0
+    )
+
+    verify(
       'Resource URN references a Tymly module, but that module is not loaded',
       {
         StartAt: 'A',
@@ -72,6 +90,21 @@ describe('TaskNode', () => {
           A: {
             Type: 'Task',
             Resource: 'module:baz',
+            End: true
+          }
+        }
+      },
+      1
+    )
+
+    verify(
+      'Resource is a Tymly function, but the function does not exist',
+      {
+        StartAt: 'A',
+        States: {
+          A: {
+            Type: 'Task',
+            Resource: 'function:unknownfn',
             End: true
           }
         }
@@ -203,7 +236,7 @@ const nullLogger = {
 function verify (title, src, count) {
   const json = JSON.parse(JSON.stringify(src))
   it(title, () => {
-    const taskNodeChecker = CheckTaskNode(testStateResources, nullLogger)
+    const taskNodeChecker = CheckTaskNode(testStateResources, testFunctions, nullLogger)
     const problems = taskNodeChecker.check(json)
     problems.forEach(p => console.log(`P: ${p}`))
     expect(problems.length).to.eql(count)
