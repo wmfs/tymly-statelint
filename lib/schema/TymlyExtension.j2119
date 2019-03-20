@@ -5,6 +5,7 @@ A State Machine MAY have a string field named "id".
 A State Machine MAY have a string field named "version".
 A State Machine MAY have a string field named "blueprintName".
 A State Machine MAY have a string field named "blueprintVersion".
+A State Machine MAY have a string field named "instigatorGroup".
 A State Machine MAY have an nonempty-string-array field named "instigators".
 A State Machine MAY have an nonempty-string-array field named "categories".
 A State Machine MAY have an nonempty-object-array field named "restrictions"; each element is a "Restriction".
