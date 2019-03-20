@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/wmfs/tymly-statelint/compare/v1.7.0...v1.8.0) (2019-03-20)
+
+
+### ✨ Features
+
+* add instigatorGroup to rules ([59b7a57](https://github.com/wmfs/tymly-statelint/commit/59b7a57))
+
 # [1.7.0](https://github.com/wmfs/tymly-statelint/compare/v1.6.2...v1.7.0) (2019-03-19)
 
 
