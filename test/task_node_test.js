@@ -11,7 +11,10 @@ const testStateResources = {
     rootDirPath: '.'
   },
   RunFunction: {
-    rootDirPath: path.resolve(__dirname, './fixtures/run-function/')
+    rootDirPath: path.resolve(__dirname, './fixtures/run-function-with-resource-config/')
+  },
+  ParamFunction: {
+    rootDirPath: path.resolve(__dirname, './fixtures/run-function-with-parameters/')
   },
   CallFunction: {
     rootDirPath: path.resolve(__dirname, './fixtures/call-function/')
@@ -165,6 +168,63 @@ describe('TaskNode', () => {
     }
     verify(
       'ResourceConfig validates',
+      machine,
+      0
+    )
+  })
+
+  describe('Task Parameters validation with J2119 validator', () => {
+    const machine = {
+      StartAt: 'A',
+      States: {
+        A: {
+          Type: 'Task',
+          Resource: 'module:ParamFunction',
+          End: true
+        }
+      }
+    }
+
+    verify(
+      'Parameters is missing',
+      machine,
+      1
+    )
+
+    machine.States.A['Parameters'] = {
+      'function': 'getFruitName',
+      'parameter': 'chirimoya'
+    }
+    verify(
+      'Parameters has incorrect fields',
+      machine,
+      3
+    )
+
+    machine.States.A['Parameters'] = {
+      functionName: 100
+    }
+    verify(
+      'Parameters is has incorrect type',
+      machine,
+      1
+    )
+
+    machine.States.A['Parameters'] = {
+      functionName: 'isBanana',
+      debug: true
+    }
+    verify(
+      'Parameters is has additional field',
+      machine,
+      1
+    )
+
+    machine.States.A['Parameters'] = {
+      functionName: 'isBanana'
+    }
+    verify(
+      'Parameters validates',
       machine,
       0
     )

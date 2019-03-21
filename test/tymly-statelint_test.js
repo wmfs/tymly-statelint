@@ -17,7 +17,13 @@ function tests (stateResources) {
       error: () => {}
     }
 
-    for (const file of fs.readdirSync(fixturesDir).filter(f => f.endsWith('.json'))) {
+    const fixtures = [
+      ['timestamp.json', 0],
+      ['hmo.json', 2],
+      ['building-dna.json', 11]
+    ]
+
+    for (const [file, errors] of fixtures) {
       it(file, () => {
         const linter = tymlyStateLint(stateResources, nullLogger)
         const json = require(path.join(fixturesDir, file))
@@ -25,14 +31,14 @@ function tests (stateResources) {
 
         problems.forEach(p => console.log(`P: ${p}`))
 
-        expect(problems).to.eql([])
+        expect(problems.length).to.eql(stateResources ? errors : 0)
       })
     }
   })
 }
 
 const stateResources = {
-  runFunction: { rootDirPath: '.' },
+  runFunction: { rootDirPath: path.resolve(__dirname, './fixtures/run-function/') },
   findingById: { rootDirPath: '.' },
   setContextData: { rootDirPath: '.' },
   awaitingHumanInput: { rootDirPath: '.' },
@@ -43,7 +49,7 @@ const stateResources = {
 }
 
 describe('TymlyStateMachineLint', () => {
-  tests()
+  tests(null)
   tests(stateResources)
   describe('logger', () => {
     class TestLogger {
@@ -57,15 +63,7 @@ describe('TymlyStateMachineLint', () => {
       const logger = new TestLogger()
       tymlyStateLint(null, null, logger)
 
-      expect(logger.logs).to.eql(['State Resources not available. Will not validate Resource or ResourceConfig'])
-    })
-
-    it('warning when no state resource schema available', () => {
-      const logger = new TestLogger()
-      const linter = tymlyStateLint(stateResources, null, logger)
-      linter.validate(require(path.join(fixturesDir, 'timestamp.json')))
-
-      expect(logger.logs).to.eql(['No ResourceConfig schema available for timestamp'])
+      expect(logger.logs).to.eql(['State Resources not available. Will not validate Resource, ResourceConfig or Parameters'])
     })
   })
 })
