@@ -249,7 +249,6 @@ describe('TaskNode', () => {
       machine,
       1
     )
-
   })
 
   describe('Task ResourceConfig validation with JSON schema validator', () => {
@@ -267,7 +266,7 @@ describe('TaskNode', () => {
     verify(
       'ResourceConfig is missing',
       machine,
-      1
+      0
     )
 
     machine.States.A['ResourceConfig'] = {
@@ -324,7 +323,7 @@ describe('TaskNode', () => {
     verify(
       'Both ResourceConfig and Parameters are missing',
       machine,
-      1
+      0
     )
 
     describe('ResourceConfig present so will be validated', () => {
