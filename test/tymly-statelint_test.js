@@ -3,7 +3,6 @@
 const chai = require('chai')
 chai.use(require('dirty-chai'))
 const expect = chai.expect
-const fs = require('fs')
 const path = require('path')
 
 const tymlyStateLint = require('../lib')
@@ -38,7 +37,7 @@ function tests (stateResources) {
 }
 
 const stateResources = {
-  runFunction: { rootDirPath: path.resolve(__dirname, './fixtures/run-function/') },
+  runFunction: { rootDirPath: '.' },
   findingById: { rootDirPath: '.' },
   setContextData: { rootDirPath: '.' },
   awaitingHumanInput: { rootDirPath: '.' },

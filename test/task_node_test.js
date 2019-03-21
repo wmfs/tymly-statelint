@@ -11,6 +11,9 @@ const testStateResources = {
     rootDirPath: '.'
   },
   RunFunction: {
+    rootDirPath: path.resolve(__dirname, './fixtures/run-function/')
+  },
+  RCFunction: {
     rootDirPath: path.resolve(__dirname, './fixtures/run-function-with-resource-config/')
   },
   ParamFunction: {
@@ -116,13 +119,13 @@ describe('TaskNode', () => {
     )
   })
 
-  describe('Task ResourceConfig validation with J2119 validator', () => {
+  describe('Task ResourceConfig validation with resource-config-schema.j2119', () => {
     const machine = {
       StartAt: 'A',
       States: {
         A: {
           Type: 'Task',
-          Resource: 'module:RunFunction',
+          Resource: 'module:RCFunction',
           End: true
         }
       }
@@ -173,7 +176,7 @@ describe('TaskNode', () => {
     )
   })
 
-  describe('Task Parameters validation with J2119 validator', () => {
+  describe('Task Parameters validation with parameters-schema.j2119', () => {
     const machine = {
       StartAt: 'A',
       States: {
@@ -228,6 +231,25 @@ describe('TaskNode', () => {
       machine,
       0
     )
+
+    machine.States.A['Parameters'] = {
+      'functionName.$': '$.isBanana'
+    }
+    verify(
+      'Parameters validates when extracting values',
+      machine,
+      0
+    )
+
+    machine.States.A['Parameters'] = {
+      'functionName.$': 'Wango'
+    }
+    verify(
+      'Parameters extract value must be a Path ',
+      machine,
+      1
+    )
+
   })
 
   describe('Task ResourceConfig validation with JSON schema validator', () => {
@@ -285,6 +307,147 @@ describe('TaskNode', () => {
       machine,
       0
     )
+  })
+
+  describe('Task ResourceConfig & Parameter validation with schema.j2119', () => {
+    const machine = {
+      StartAt: 'A',
+      States: {
+        A: {
+          Type: 'Task',
+          Resource: 'module:RunFunction',
+          End: true
+        }
+      }
+    }
+
+    verify(
+      'Both ResourceConfig and Parameters are missing',
+      machine,
+      1
+    )
+
+    describe('ResourceConfig present so will be validated', () => {
+      machine.States.A['ResourceConfig'] = {
+        'function': 'getFruitName',
+        'parameter': 'chirimoya'
+      }
+      verify(
+        'ResourceConfig has incorrect fields',
+        machine,
+        3
+      )
+
+      machine.States.A['ResourceConfig'] = {
+        functionName: 100
+      }
+      verify(
+        'ResourceConfig is has incorrect type',
+        machine,
+        1
+      )
+
+      machine.States.A['ResourceConfig'] = {
+        functionName: 'isBanana',
+        debug: true
+      }
+      verify(
+        'ResourceConfig is has additional field',
+        machine,
+        1
+      )
+
+      machine.States.A['ResourceConfig'] = {
+        functionName: 'isBanana'
+      }
+      verify(
+        'ResourceConfig validates',
+        machine,
+        0
+      )
+
+      delete machine.States.A['ResourceConfig']
+    })
+
+    describe('No ResourceConfig, Parameters present so validate those', () => {
+      machine.States.A['Parameters'] = {
+        'function': 'getFruitName',
+        'parameter': 'chirimoya'
+      }
+      verify(
+        'Parameters has incorrect fields',
+        machine,
+        3
+      )
+
+      machine.States.A['Parameters'] = {
+        functionName: 100
+      }
+      verify(
+        'Parameters is has incorrect type',
+        machine,
+        1
+      )
+
+      machine.States.A['Parameters'] = {
+        functionName: 'isBanana',
+        debug: true
+      }
+      verify(
+        'Parameters is has additional field',
+        machine,
+        1
+      )
+
+      machine.States.A['Parameters'] = {
+        functionName: 'isBanana'
+      }
+      verify(
+        'Parameters validates',
+        machine,
+        0
+      )
+    })
+
+    describe('Both ResourceConfig and Parameters present. Validate ResourceConfig error on Parameters', () => {
+      machine.States.A['ResourceConfig'] = {
+        'function': 'getFruitName',
+        'parameter': 'chirimoya'
+      }
+      verify(
+        'ResourceConfig has incorrect fields',
+        machine,
+        4
+      )
+
+      machine.States.A['ResourceConfig'] = {
+        functionName: 100
+      }
+      verify(
+        'ResourceConfig is has incorrect type',
+        machine,
+        2
+      )
+
+      machine.States.A['ResourceConfig'] = {
+        functionName: 'isBanana',
+        debug: true
+      }
+      verify(
+        'ResourceConfig is has additional field',
+        machine,
+        2
+      )
+
+      machine.States.A['ResourceConfig'] = {
+        functionName: 'isBanana'
+      }
+      verify(
+        'ResourceConfig validates',
+        machine,
+        1
+      )
+    })
   })
 })
 
