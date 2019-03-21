@@ -1,3 +1,16 @@
+# [1.9.0](https://github.com/wmfs/tymly-statelint/compare/v1.8.0...v1.9.0) (2019-03-21)
+
+
+### ✨ Features
+
+* Complete Parameters validation. ([85d3f8b](https://github.com/wmfs/tymly-statelint/commit/85d3f8b))
+* Start on Parameters validation ([62b63c3](https://github.com/wmfs/tymly-statelint/commit/62b63c3))
+
+
+### 🐛 Bug Fixes
+
+* Silence one of the warnings. Too many atm, so not helpful. ([d17fc39](https://github.com/wmfs/tymly-statelint/commit/d17fc39))
+
 # [1.8.0](https://github.com/wmfs/tymly-statelint/compare/v1.7.0...v1.8.0) (2019-03-20)
 
 
