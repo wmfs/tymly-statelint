@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/wmfs/tymly-statelint/compare/v1.9.0...v1.10.0) (2019-03-27)
+
+
+### ✨ Features
+
+* Add optional "canBeStartedOffline" field to state machine. ([859b1ee](https://github.com/wmfs/tymly-statelint/commit/859b1ee))
+
 # [1.9.0](https://github.com/wmfs/tymly-statelint/compare/v1.8.0...v1.9.0) (2019-03-21)
 
 
