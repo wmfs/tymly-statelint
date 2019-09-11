@@ -1,3 +1,31 @@
+# [1.11.0](https://github.com/wmfs/tymly-statelint/compare/v1.10.0...v1.11.0) (2019-09-11)
+
+
+### 🛠 Builds
+
+* **deps:** update [@wmfs](https://github.com/wmfs)/j2119 requirement from 1.7.1 to 1.8.0 ([4d5284c](https://github.com/wmfs/tymly-statelint/commit/4d5284c))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/changelog requirement ([d225ab4](https://github.com/wmfs/tymly-statelint/commit/d225ab4))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([903ec2c](https://github.com/wmfs/tymly-statelint/commit/903ec2c))
+* **deps-dev:** update [@semantic-release](https://github.com/semantic-release)/git requirement ([ad2d8e6](https://github.com/wmfs/tymly-statelint/commit/ad2d8e6))
+* **deps-dev:** update codecov requirement from 3.1.0 to 3.5.0 ([af3da6a](https://github.com/wmfs/tymly-statelint/commit/af3da6a))
+* **deps-dev:** update cz-conventional-changelog requirement ([100c0e8](https://github.com/wmfs/tymly-statelint/commit/100c0e8))
+* **deps-dev:** update mocha requirement from 5.2.0 to 6.1.4 ([d5d6660](https://github.com/wmfs/tymly-statelint/commit/d5d6660))
+* **deps-dev:** update mocha requirement from 6.1.4 to 6.2.0 ([9febd3f](https://github.com/wmfs/tymly-statelint/commit/9febd3f))
+* **deps-dev:** update nyc requirement from 13.1.0 to 14.1.1 ([776dbe0](https://github.com/wmfs/tymly-statelint/commit/776dbe0))
+* **deps-dev:** update semantic-release requirement ([ffd8d21](https://github.com/wmfs/tymly-statelint/commit/ffd8d21))
+* **deps-dev:** update semantic-release requirement ([f9812b4](https://github.com/wmfs/tymly-statelint/commit/f9812b4))
+
+
+### 📚 Documentation
+
+* Add CircleCI badge ([7d3b1e0](https://github.com/wmfs/tymly-statelint/commit/7d3b1e0))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** Add CircleCI config ([19a2296](https://github.com/wmfs/tymly-statelint/commit/19a2296))
+* **travis:** Remove Travis config ([8924163](https://github.com/wmfs/tymly-statelint/commit/8924163))
+
 # [1.10.0](https://github.com/wmfs/tymly-statelint/compare/v1.9.0...v1.10.0) (2019-03-27)
 
 
