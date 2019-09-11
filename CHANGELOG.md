@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/wmfs/tymly-statelint/compare/v1.12.0...v1.13.0) (2019-09-11)
+
+
+### 🛠 Builds
+
+* **deps:** update ajv requirement from 6.5.5 to 6.10.2 ([bccdb26](https://github.com/wmfs/tymly-statelint/commit/bccdb26))
+
 # [1.12.0](https://github.com/wmfs/tymly-statelint/compare/v1.11.0...v1.12.0) (2019-09-11)
 
 
