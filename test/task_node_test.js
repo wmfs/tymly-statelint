@@ -21,6 +21,9 @@ const testStateResources = {
   },
   CallFunction: {
     rootDirPath: path.resolve(__dirname, './fixtures/call-function/')
+  },
+  FreeFormParameters: {
+    rootDirPath: path.resolve(__dirname, './fixtures/free-form-parameters/')
   }
 }
 const testFunctions = {
@@ -447,6 +450,73 @@ describe('TaskNode', () => {
         1
       )
     })
+  })
+
+  describe('Task Parameters validation where parameters may have any shape', () => {
+    const machine = {
+      StartAt: 'A',
+      States: {
+        A: {
+          Type: 'Task',
+          Resource: 'module:FreeFormParameters',
+          End: true
+        }
+      }
+    }
+
+    verify(
+      'Parameters validate when none given',
+      machine,
+      0
+    )
+
+    machine.States.A['Parameters'] = {
+      'function': 'getFruitName',
+      'parameter': 'chirimoya'
+    }
+    verify(
+      'Parameters validate with string fields',
+      machine,
+      0
+    )
+
+    machine.States.A['Parameters'] = {
+      'object': {
+        'parameter': 'chirimoya'
+      }
+    }
+    verify(
+      'Parameters validate with object field',
+      machine,
+      0
+    )
+
+    machine.States.A['Parameters'] = {
+      functionName: 100
+    }
+    verify(
+      'Parameters validate with integer',
+      machine,
+      0
+    )
+
+    machine.States.A['Parameters'] = {
+      'functionName.$': '$.isBanana'
+    }
+    verify(
+      'Parameters validates when extracting values',
+      machine,
+      0
+    )
+
+    machine.States.A['Parameters'] = {
+      'functionName.$': 'Wango'
+    }
+    verify(
+      'Parameters extract value must be a Path ',
+      machine,
+      1
+    )
   })
 })
 
