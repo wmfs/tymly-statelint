@@ -1,3 +1,10 @@
+## [1.14.1](https://github.com/wmfs/tymly-statelint/compare/v1.14.0...v1.14.1) (2019-11-21)
+
+
+### 🐛 Bug Fixes
+
+* Fix parameter and resource-config validation to allow them to contain any fields. ([103d1e6](https://github.com/wmfs/tymly-statelint/commit/103d1e6d3f0a5f1ec7ba53ed3e77a50dc1ae62e4))
+
 # [1.14.0](https://github.com/wmfs/tymly-statelint/compare/v1.13.0...v1.14.0) (2019-11-14)
 
 
