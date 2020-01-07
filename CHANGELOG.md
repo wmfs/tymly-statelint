@@ -1,3 +1,12 @@
+# [1.15.0](https://github.com/wmfs/tymly-statelint/compare/v1.14.1...v1.15.0) (2020-01-07)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/j2119 from 1.8.0 to 1.9.0 ([9e1499f](https://github.com/wmfs/tymly-statelint/commit/9e1499fa268f54913d78d1a21d0ed8a08592a759))
+* **deps-dev:** bump mocha from 6.2.2 to 7.0.0 ([d93cedf](https://github.com/wmfs/tymly-statelint/commit/d93cedf341109efe9a123d3e5d527ffdd7dd6d4c))
+* **deps-dev:** bump packages ([ad6aff0](https://github.com/wmfs/tymly-statelint/commit/ad6aff0474e79b53b4a48a3bc59c19b05dd2bdc2))
+
 ## [1.14.1](https://github.com/wmfs/tymly-statelint/compare/v1.14.0...v1.14.1) (2019-11-21)
 
 
