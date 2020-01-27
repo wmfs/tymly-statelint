@@ -140,9 +140,9 @@ describe('TaskNode', () => {
       1
     )
 
-    machine.States.A['ResourceConfig'] = {
-      'function': 'getFruitName',
-      'parameter': 'chirimoya'
+    machine.States.A.ResourceConfig = {
+      function: 'getFruitName',
+      parameter: 'chirimoya'
     }
     verify(
       'ResourceConfig has incorrect fields',
@@ -150,7 +150,7 @@ describe('TaskNode', () => {
       3
     )
 
-    machine.States.A['ResourceConfig'] = {
+    machine.States.A.ResourceConfig = {
       functionName: 100
     }
     verify(
@@ -159,7 +159,7 @@ describe('TaskNode', () => {
       1
     )
 
-    machine.States.A['ResourceConfig'] = {
+    machine.States.A.ResourceConfig = {
       functionName: 'isBanana',
       debug: true
     }
@@ -169,7 +169,7 @@ describe('TaskNode', () => {
       1
     )
 
-    machine.States.A['ResourceConfig'] = {
+    machine.States.A.ResourceConfig = {
       functionName: 'isBanana'
     }
     verify(
@@ -197,9 +197,9 @@ describe('TaskNode', () => {
       1
     )
 
-    machine.States.A['Parameters'] = {
-      'function': 'getFruitName',
-      'parameter': 'chirimoya'
+    machine.States.A.Parameters = {
+      function: 'getFruitName',
+      parameter: 'chirimoya'
     }
     verify(
       'Parameters has incorrect fields',
@@ -207,7 +207,7 @@ describe('TaskNode', () => {
       3
     )
 
-    machine.States.A['Parameters'] = {
+    machine.States.A.Parameters = {
       functionName: 100
     }
     verify(
@@ -216,7 +216,7 @@ describe('TaskNode', () => {
       1
     )
 
-    machine.States.A['Parameters'] = {
+    machine.States.A.Parameters = {
       functionName: 'isBanana',
       debug: true
     }
@@ -226,7 +226,7 @@ describe('TaskNode', () => {
       1
     )
 
-    machine.States.A['Parameters'] = {
+    machine.States.A.Parameters = {
       functionName: 'isBanana'
     }
     verify(
@@ -235,7 +235,7 @@ describe('TaskNode', () => {
       0
     )
 
-    machine.States.A['Parameters'] = {
+    machine.States.A.Parameters = {
       'functionName.$': '$.isBanana'
     }
     verify(
@@ -244,7 +244,7 @@ describe('TaskNode', () => {
       0
     )
 
-    machine.States.A['Parameters'] = {
+    machine.States.A.Parameters = {
       'functionName.$': 'Wango'
     }
     verify(
@@ -272,9 +272,9 @@ describe('TaskNode', () => {
       0
     )
 
-    machine.States.A['ResourceConfig'] = {
-      'function': 'getFruitName',
-      'parameter': 'chirimoya'
+    machine.States.A.ResourceConfig = {
+      function: 'getFruitName',
+      parameter: 'chirimoya'
     }
     verify(
       'ResourceConfig has incorrect fields',
@@ -282,7 +282,7 @@ describe('TaskNode', () => {
       1
     )
 
-    machine.States.A['ResourceConfig'] = {
+    machine.States.A.ResourceConfig = {
       functionName: 100
     }
     verify(
@@ -291,7 +291,7 @@ describe('TaskNode', () => {
       1
     )
 
-    machine.States.A['ResourceConfig'] = {
+    machine.States.A.ResourceConfig = {
       functionName: 'isBanana',
       debug: true
     }
@@ -301,7 +301,7 @@ describe('TaskNode', () => {
       1
     )
 
-    machine.States.A['ResourceConfig'] = {
+    machine.States.A.ResourceConfig = {
       functionName: 'isBanana'
     }
     verify(
@@ -330,9 +330,9 @@ describe('TaskNode', () => {
     )
 
     describe('ResourceConfig present so will be validated', () => {
-      machine.States.A['ResourceConfig'] = {
-        'function': 'getFruitName',
-        'parameter': 'chirimoya'
+      machine.States.A.ResourceConfig = {
+        function: 'getFruitName',
+        parameter: 'chirimoya'
       }
       verify(
         'ResourceConfig has incorrect fields',
@@ -340,7 +340,7 @@ describe('TaskNode', () => {
         3
       )
 
-      machine.States.A['ResourceConfig'] = {
+      machine.States.A.ResourceConfig = {
         functionName: 100
       }
       verify(
@@ -349,7 +349,7 @@ describe('TaskNode', () => {
         1
       )
 
-      machine.States.A['ResourceConfig'] = {
+      machine.States.A.ResourceConfig = {
         functionName: 'isBanana',
         debug: true
       }
@@ -359,7 +359,7 @@ describe('TaskNode', () => {
         1
       )
 
-      machine.States.A['ResourceConfig'] = {
+      machine.States.A.ResourceConfig = {
         functionName: 'isBanana'
       }
       verify(
@@ -368,13 +368,13 @@ describe('TaskNode', () => {
         0
       )
 
-      delete machine.States.A['ResourceConfig']
+      delete machine.States.A.ResourceConfig
     })
 
     describe('No ResourceConfig, Parameters present so validate those', () => {
-      machine.States.A['Parameters'] = {
-        'function': 'getFruitName',
-        'parameter': 'chirimoya'
+      machine.States.A.Parameters = {
+        function: 'getFruitName',
+        parameter: 'chirimoya'
       }
       verify(
         'Parameters has incorrect fields',
@@ -382,7 +382,7 @@ describe('TaskNode', () => {
         3
       )
 
-      machine.States.A['Parameters'] = {
+      machine.States.A.Parameters = {
         functionName: 100
       }
       verify(
@@ -391,7 +391,7 @@ describe('TaskNode', () => {
         1
       )
 
-      machine.States.A['Parameters'] = {
+      machine.States.A.Parameters = {
         functionName: 'isBanana',
         debug: true
       }
@@ -401,7 +401,7 @@ describe('TaskNode', () => {
         1
       )
 
-      machine.States.A['Parameters'] = {
+      machine.States.A.Parameters = {
         functionName: 'isBanana'
       }
       verify(
@@ -412,9 +412,9 @@ describe('TaskNode', () => {
     })
 
     describe('Both ResourceConfig and Parameters present. Validate ResourceConfig error on Parameters', () => {
-      machine.States.A['ResourceConfig'] = {
-        'function': 'getFruitName',
-        'parameter': 'chirimoya'
+      machine.States.A.ResourceConfig = {
+        function: 'getFruitName',
+        parameter: 'chirimoya'
       }
       verify(
         'ResourceConfig has incorrect fields',
@@ -422,7 +422,7 @@ describe('TaskNode', () => {
         4
       )
 
-      machine.States.A['ResourceConfig'] = {
+      machine.States.A.ResourceConfig = {
         functionName: 100
       }
       verify(
@@ -431,7 +431,7 @@ describe('TaskNode', () => {
         2
       )
 
-      machine.States.A['ResourceConfig'] = {
+      machine.States.A.ResourceConfig = {
         functionName: 'isBanana',
         debug: true
       }
@@ -441,7 +441,7 @@ describe('TaskNode', () => {
         2
       )
 
-      machine.States.A['ResourceConfig'] = {
+      machine.States.A.ResourceConfig = {
         functionName: 'isBanana'
       }
       verify(
@@ -470,9 +470,9 @@ describe('TaskNode', () => {
       0
     )
 
-    machine.States.A['Parameters'] = {
-      'function': 'getFruitName',
-      'parameter': 'chirimoya'
+    machine.States.A.Parameters = {
+      function: 'getFruitName',
+      parameter: 'chirimoya'
     }
     verify(
       'Parameters validate with string fields',
@@ -480,9 +480,9 @@ describe('TaskNode', () => {
       0
     )
 
-    machine.States.A['Parameters'] = {
-      'object': {
-        'parameter': 'chirimoya'
+    machine.States.A.Parameters = {
+      object: {
+        parameter: 'chirimoya'
       }
     }
     verify(
@@ -491,7 +491,7 @@ describe('TaskNode', () => {
       0
     )
 
-    machine.States.A['Parameters'] = {
+    machine.States.A.Parameters = {
       functionName: 100
     }
     verify(
@@ -500,7 +500,7 @@ describe('TaskNode', () => {
       0
     )
 
-    machine.States.A['Parameters'] = {
+    machine.States.A.Parameters = {
       'functionName.$': '$.isBanana'
     }
     verify(
@@ -509,7 +509,7 @@ describe('TaskNode', () => {
       0
     )
 
-    machine.States.A['Parameters'] = {
+    machine.States.A.Parameters = {
       'functionName.$': 'Wango'
     }
     verify(
