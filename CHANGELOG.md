@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/wmfs/tymly-statelint/compare/v1.17.0...v1.18.0) (2020-01-27)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/j2119 from 1.9.0 to 1.10.0 ([74ce35e](https://github.com/wmfs/tymly-statelint/commit/74ce35e5879783f5f6e54ee4653c621f3c0dce27))
+
 # [1.17.0](https://github.com/wmfs/tymly-statelint/compare/v1.16.0...v1.17.0) (2020-01-27)
 
 
