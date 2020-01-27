@@ -1,3 +1,19 @@
+# [1.17.0](https://github.com/wmfs/tymly-statelint/compare/v1.16.0...v1.17.0) (2020-01-27)
+
+
+### 🛠 Builds
+
+* **deps:** bump ajv from 6.10.2 to 6.11.0 ([e6bcdc0](https://github.com/wmfs/tymly-statelint/commit/e6bcdc0936e3dad806ed7d20574c8a924aae48c8))
+* **deps-dev:** bump codecov from 3.6.1 to 3.6.2 ([dc858c5](https://github.com/wmfs/tymly-statelint/commit/dc858c575013da36b80cd52afffe095fb140abba))
+* **deps-dev:** bump conventional-changelog-metahub from 3.0.0 to 4.0.0 ([9a6fbfb](https://github.com/wmfs/tymly-statelint/commit/9a6fbfb3cc1f169e35ef61d642f244d81099017b))
+* **deps-dev:** bump mocha from 7.0.0 to 7.0.1 ([ad4a778](https://github.com/wmfs/tymly-statelint/commit/ad4a7782b30d53ffd688bdc76b06dd489a3d64db))
+* **deps-dev:** update standard requirement from 12.0.1 to 14.3.1 ([c60dd4c](https://github.com/wmfs/tymly-statelint/commit/c60dd4c9bff781bafd02506c852c9e91e7fa472a))
+
+
+### 💎 Styles
+
+* standard --fix ([b8e5364](https://github.com/wmfs/tymly-statelint/commit/b8e5364a5dc9ea67b81d95216c0ca3d18f3bb389))
+
 # [1.16.0](https://github.com/wmfs/tymly-statelint/compare/v1.15.0...v1.16.0) (2020-01-08)
 
 
