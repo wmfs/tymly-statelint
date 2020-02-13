@@ -1,3 +1,15 @@
+# [1.20.0](https://github.com/wmfs/tymly-statelint/compare/v1.19.0...v1.20.0) (2020-02-13)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/j2119 from 1.10.0 to 1.11.0 ([31985d7](https://github.com/wmfs/tymly-statelint/commit/31985d715712369442221a8f6d5361a2fbc9b86a))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/changelog from 3.0.6 to 5.0.0 ([8203ad6](https://github.com/wmfs/tymly-statelint/commit/8203ad674534297522a7edea4edafe19bd699fe7))
+* **deps-dev:** bump codecov from 3.6.2 to 3.6.3 ([c83b3e2](https://github.com/wmfs/tymly-statelint/commit/c83b3e213285455698b7685d9f5789691e0cd7aa))
+* **deps-dev:** bump codecov from 3.6.3 to 3.6.4 ([81d5239](https://github.com/wmfs/tymly-statelint/commit/81d5239c02f8e1d6a668b3cd094b0507e3f741bb))
+* **deps-dev:** bump codecov from 3.6.4 to 3.6.5 ([bd8d89a](https://github.com/wmfs/tymly-statelint/commit/bd8d89a2c743ced83ff9017d84bc10ed49598f4f))
+* **deps-dev:** bump cz-conventional-changelog from 3.0.2 to 3.1.0 ([836eea2](https://github.com/wmfs/tymly-statelint/commit/836eea2aa16ecff0207229014024862a6416c375))
+
 # [1.19.0](https://github.com/wmfs/tymly-statelint/compare/v1.18.0...v1.19.0) (2020-01-27)
 
 
