@@ -1,3 +1,10 @@
+# [1.22.0](https://github.com/wmfs/tymly-statelint/compare/v1.21.0...v1.22.0) (2020-02-26)
+
+
+### 🛠 Builds
+
+* **deps:** bump ajv from 6.11.0 to 6.12.0 ([fa85466](https://github.com/wmfs/tymly-statelint/commit/fa8546636e3a704e47aa39057b3bd7e95271696f))
+
 # [1.21.0](https://github.com/wmfs/tymly-statelint/compare/v1.20.0...v1.21.0) (2020-02-14)
 
 
