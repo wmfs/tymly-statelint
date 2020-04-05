@@ -1,3 +1,24 @@
+# [1.23.0](https://github.com/wmfs/tymly-statelint/compare/v1.22.0...v1.23.0) (2020-04-05)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/j2119 from 1.11.0 to 1.12.0 ([e56ab62](https://github.com/wmfs/tymly-statelint/commit/e56ab6286d7f9d1cdb38d0ee60f4140eca0dc633))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/changelog from 5.0.0 to 5.0.1 ([10f4a58](https://github.com/wmfs/tymly-statelint/commit/10f4a580a954dbf4bd033378dccf1896962fb6d5))
+* **deps-dev:** bump [@semantic-release](https://github.com/semantic-release)/git from 7.0.18 to 9.0.0 ([4805743](https://github.com/wmfs/tymly-statelint/commit/480574359554304004ab25d3ebdf5e4e5d6dd4fa))
+* **deps-dev:** bump conventional-changelog-metahub from 4.0.0 to 4.0.1 ([d85c526](https://github.com/wmfs/tymly-statelint/commit/d85c52645a727e88d7d055e4be207fd9aff20b38))
+* **deps-dev:** bump mocha from 7.0.1 to 7.1.0 ([60f1510](https://github.com/wmfs/tymly-statelint/commit/60f151076a486fbf502cb0f32772eab9594bd6e8))
+* **deps-dev:** bump mocha from 7.1.0 to 7.1.1 ([3606624](https://github.com/wmfs/tymly-statelint/commit/3606624c5d9b9d05d16a3a8f989e50f1c1a50c76))
+* **deps-dev:** bump nyc from 15.0.0 to 15.0.1 ([0350f92](https://github.com/wmfs/tymly-statelint/commit/0350f924c9fa5f2734529f5f9b4c74de594d1b80))
+* **deps-dev:** bump semantic-release from 15.14.0 to 17.0.4 ([2b64d77](https://github.com/wmfs/tymly-statelint/commit/2b64d77b24f98aef6c2973b85c7845f4e2c9d713))
+* **deps-dev:** bump standard from 14.3.1 to 14.3.2 ([594bca6](https://github.com/wmfs/tymly-statelint/commit/594bca6c4bb045522540c6ee596d49b3b43af35b))
+* **deps-dev:** bump standard from 14.3.2 to 14.3.3 ([9c80c7b](https://github.com/wmfs/tymly-statelint/commit/9c80c7b553acae9722d22782f55fb8d568631545))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** add context env var config to config.yml ([3bfe2ed](https://github.com/wmfs/tymly-statelint/commit/3bfe2ed8b4d4002387f1687e370f5ee73a632306))
+
 # [1.22.0](https://github.com/wmfs/tymly-statelint/compare/v1.21.0...v1.22.0) (2020-02-26)
 
 
