@@ -1,3 +1,15 @@
+# [1.27.0](https://github.com/wmfs/tymly-statelint/compare/v1.26.0...v1.27.0) (2020-05-11)
+
+
+### 🛠 Builds
+
+* **deps:** bump ajv from 6.12.0 to 6.12.2 ([3ce2bf5](https://github.com/wmfs/tymly-statelint/commit/3ce2bf54e479384263515a779cf376abe7b55019))
+* **deps-dev:** bump cz-conventional-changelog from 3.1.0 to 3.2.0 ([969e35c](https://github.com/wmfs/tymly-statelint/commit/969e35c6753b80fdd72eeea5a1f0ddfbdc4b7e42))
+* **deps-dev:** bump mocha from 7.1.1 to 7.1.2 ([a3e3fa6](https://github.com/wmfs/tymly-statelint/commit/a3e3fa679498bfb74043bfbbc02be443d4c361df))
+* **deps-dev:** bump semantic-release from 17.0.4 to 17.0.5 ([68b2510](https://github.com/wmfs/tymly-statelint/commit/68b25100eb6dd55aa44897917809654951498c15))
+* **deps-dev:** bump semantic-release from 17.0.5 to 17.0.6 ([87328b9](https://github.com/wmfs/tymly-statelint/commit/87328b94a59d061ccbbb7b0247ec96d3a566a601))
+* **deps-dev:** bump semantic-release from 17.0.6 to 17.0.7 ([aca6ab6](https://github.com/wmfs/tymly-statelint/commit/aca6ab6209565e850f9d4484fbec26480b360c22))
+
 # [1.26.0](https://github.com/wmfs/tymly-statelint/compare/v1.25.0...v1.26.0) (2020-04-08)
 
 
