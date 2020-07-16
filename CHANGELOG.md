@@ -1,3 +1,19 @@
+# [1.30.0](https://github.com/wmfs/tymly-statelint/compare/v1.29.0...v1.30.0) (2020-07-16)
+
+
+### 🛠 Builds
+
+* **deps:** bump ajv from 6.12.2 to 6.12.3 ([a368e3e](https://github.com/wmfs/tymly-statelint/commit/a368e3ef83e9ac9d7766dbcee935c37d4e9c3933))
+* **deps-dev:** bump mocha from 7.2.0 to 8.0.1 ([1390abd](https://github.com/wmfs/tymly-statelint/commit/1390abdbe299bd546914b4fe5af0c9f9b6a7c8c6))
+* **deps-dev:** bump nyc from 15.0.1 to 15.1.0 ([4c6d0a0](https://github.com/wmfs/tymly-statelint/commit/4c6d0a0d2f13b1a05d283bee71b7035d2eefe0a9))
+* **deps-dev:** bump semantic-release from 17.0.8 to 17.1.0 ([bc40ad7](https://github.com/wmfs/tymly-statelint/commit/bc40ad73a15c733b4f599ae042adffa3ad1f6f63))
+* **deps-dev:** bump semantic-release from 17.1.0 to 17.1.1 ([ecf2dff](https://github.com/wmfs/tymly-statelint/commit/ecf2dffbcfb7024236e8b813b603c1a9fab45076))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** use updated circle node image [skip ci] ([73fe894](https://github.com/wmfs/tymly-statelint/commit/73fe894adbc6e3bde13115a1b4f3c14b074d9ab0))
+
 # [1.29.0](https://github.com/wmfs/tymly-statelint/compare/v1.28.0...v1.29.0) (2020-05-31)
 
 
