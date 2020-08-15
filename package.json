@@ -25,7 +25,7 @@
   "dependencies": {
     "@wmfs/j2119": "1.14.0",
     "@wmfs/statelint": "1.15.0",
-    "ajv": "6.12.3",
+    "ajv": "6.12.4",
     "lodash.clonedeep": "4.5.0",
     "lodash.kebabcase": "4.1.1"
   },
