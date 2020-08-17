@@ -1,3 +1,19 @@
+# [1.31.0](https://github.com/wmfs/tymly-statelint/compare/v1.30.0...v1.31.0) (2020-08-17)
+
+
+### 🛠 Builds
+
+* **deps:** bump ajv from 6.12.3 to 6.12.4 ([ffa79dc](https://github.com/wmfs/tymly-statelint/commit/ffa79dc3d9d517fdcd2abf830994dec46746875f))
+* **deps-dev:** bump codecov from 3.7.0 to 3.7.1 ([88d3ff6](https://github.com/wmfs/tymly-statelint/commit/88d3ff69e959e346ff21c21317cc02d74555afc8))
+* **deps-dev:** bump codecov from 3.7.1 to 3.7.2 ([050d5ac](https://github.com/wmfs/tymly-statelint/commit/050d5acc6c4c7858c7a822c270d1280d2001a47f))
+* **deps-dev:** bump mocha from 8.0.1 to 8.1.0 ([91ba41b](https://github.com/wmfs/tymly-statelint/commit/91ba41b09d11184c3d354af202a5e2cb03c39fcc))
+* **deps-dev:** bump mocha from 8.1.0 to 8.1.1 ([ea110ef](https://github.com/wmfs/tymly-statelint/commit/ea110ef8ab960d0b7cc93a2b7e8d16b2bd546dee))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** separate lint job [ch1009] ([512307b](https://github.com/wmfs/tymly-statelint/commit/512307b608e6937484f0c2c3d7f32316f786785d))
+
 # [1.30.0](https://github.com/wmfs/tymly-statelint/compare/v1.29.0...v1.30.0) (2020-07-16)
 
 
