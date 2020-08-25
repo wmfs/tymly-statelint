@@ -1,3 +1,11 @@
+# [1.33.0](https://github.com/wmfs/tymly-statelint/compare/v1.32.0...v1.33.0) (2020-08-25)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/statelint from 1.15.0 to 1.16.0 ([ca921cc](https://github.com/wmfs/tymly-statelint/commit/ca921ccbf2e60a22b2f246b353577c7d4272479a))
+* **deps-dev:** bump cz-conventional-changelog from 3.2.0 to 3.2.1 ([cdb495c](https://github.com/wmfs/tymly-statelint/commit/cdb495c4b57fc2b3a480f386b229523fef7ff0eb))
+
 # [1.32.0](https://github.com/wmfs/tymly-statelint/compare/v1.31.0...v1.32.0) (2020-08-25)
 
 
