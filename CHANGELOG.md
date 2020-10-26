@@ -1,3 +1,21 @@
+# [1.35.0](https://github.com/wmfs/tymly-statelint/compare/v1.34.0...v1.35.0) (2020-10-26)
+
+
+### 🛠 Builds
+
+* **deps:** bump ajv from 6.12.5 to 6.12.6 ([af136a3](https://github.com/wmfs/tymly-statelint/commit/af136a34454cf2dc24d41d24398745a6b702af0d))
+* **deps-dev:** bump codecov from 3.7.2 to 3.8.0 ([f58d233](https://github.com/wmfs/tymly-statelint/commit/f58d233ca7582fa9b82ad21098fcb507a0fc6ded))
+* **deps-dev:** bump mocha from 8.1.3 to 8.2.0 ([56e5e96](https://github.com/wmfs/tymly-statelint/commit/56e5e960d21a2f1b146ed9683154ad6170138cf6))
+* **deps-dev:** bump semantic-release from 17.1.2 to 17.2.0 ([fdf3708](https://github.com/wmfs/tymly-statelint/commit/fdf37085cf62898245538e014de0368ee5b0a824))
+* **deps-dev:** bump semantic-release from 17.2.0 to 17.2.1 ([c425a8a](https://github.com/wmfs/tymly-statelint/commit/c425a8ac46b795a2b0b76fe942dc92b3549b2c99))
+* **deps-dev:** bump standard from 14.3.4 to 15.0.0 ([6627e8a](https://github.com/wmfs/tymly-statelint/commit/6627e8a35eefd8a90c32070bf911dd2b1963b99d))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** authenticate Docker image pull [ch2767] ([174e693](https://github.com/wmfs/tymly-statelint/commit/174e69373a543d4aa4deef8109c9ccfba6791488))
+* **circle:** cache dependencies [ch2770] ([b966da3](https://github.com/wmfs/tymly-statelint/commit/b966da3eda55ca267030aaf87205819c20cf97d8))
+
 # [1.34.0](https://github.com/wmfs/tymly-statelint/compare/v1.33.0...v1.34.0) (2020-09-28)
 
 
