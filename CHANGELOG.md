@@ -1,3 +1,28 @@
+# [1.36.0](https://github.com/wmfs/tymly-statelint/compare/v1.35.0...v1.36.0) (2021-01-06)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/statelint from 1.16.0 to 1.17.0 ([ad0d739](https://github.com/wmfs/tymly-statelint/commit/ad0d739785e9fb2ff011f96f51c5861df5acbcb0))
+* **deps-dev:** bump codecov from 3.8.0 to 3.8.1 ([b127a05](https://github.com/wmfs/tymly-statelint/commit/b127a055f97c8af9a57ab30dfc259edb68423b5e))
+* **deps-dev:** bump mocha from 8.2.0 to 8.2.1 ([da17ac4](https://github.com/wmfs/tymly-statelint/commit/da17ac45d2fddad1e92a1eecfd8a5a8d688da4fb))
+* **deps-dev:** bump semantic-release from 17.2.1 to 17.2.2 ([db90f5e](https://github.com/wmfs/tymly-statelint/commit/db90f5ec164479d0788ada86c3d02dadba35c7f2))
+* **deps-dev:** bump semantic-release from 17.2.2 to 17.2.3 ([32cbe7b](https://github.com/wmfs/tymly-statelint/commit/32cbe7b7eb30b751e2a609f5487c5abd61e74e38))
+* **deps-dev:** bump semantic-release from 17.2.3 to 17.2.4 ([43fb4ea](https://github.com/wmfs/tymly-statelint/commit/43fb4ea61aa65e04bbb5e5e5890e995241be6b35))
+* **deps-dev:** bump semantic-release from 17.2.4 to 17.3.0 ([4cab5a5](https://github.com/wmfs/tymly-statelint/commit/4cab5a53bf8ccdabeebc5996ed17a2c2cb727c01))
+* **deps-dev:** bump semantic-release from 17.3.0 to 17.3.1 ([74e6522](https://github.com/wmfs/tymly-statelint/commit/74e652245ef4d0580e9052ff6e46dbb8fedce876))
+* **deps-dev:** bump standard from 15.0.0 to 15.0.1 ([a79d85e](https://github.com/wmfs/tymly-statelint/commit/a79d85e131e54fdee894fedd8fe900af2c1c8605))
+* **deps-dev:** bump standard from 15.0.1 to 16.0.0 ([66800bb](https://github.com/wmfs/tymly-statelint/commit/66800bb8ce490fb915208dc5522cb062708ba406))
+* **deps-dev:** bump standard from 16.0.0 to 16.0.1 ([fa10885](https://github.com/wmfs/tymly-statelint/commit/fa10885ad03594da946dd2c38a5a401eda92fa9b))
+* **deps-dev:** bump standard from 16.0.1 to 16.0.2 ([6f48ab7](https://github.com/wmfs/tymly-statelint/commit/6f48ab78e035b1c75063b5ae4d5dd879db179394))
+* **deps-dev:** bump standard from 16.0.2 to 16.0.3 ([ee100b3](https://github.com/wmfs/tymly-statelint/commit/ee100b3aed42e0fb8c11c5876e700d38f5e96942))
+
+
+### ⚙️ Continuous Integrations
+
+* **circle:** separate linting job [ch1009] ([f97101b](https://github.com/wmfs/tymly-statelint/commit/f97101beabd9b94724c655b5c4eda8061236b009))
+* **circle:** update build environment variable context name [ch2771] ([e5c9053](https://github.com/wmfs/tymly-statelint/commit/e5c9053915ce66bc79a344f854c4c22044945245))
+
 # [1.35.0](https://github.com/wmfs/tymly-statelint/compare/v1.34.0...v1.35.0) (2020-10-26)
 
 
