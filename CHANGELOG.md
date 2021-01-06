@@ -1,3 +1,10 @@
+# [1.37.0](https://github.com/wmfs/tymly-statelint/compare/v1.36.0...v1.37.0) (2021-01-06)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/j2119 from 1.15.0 to 1.16.0 ([5a75e69](https://github.com/wmfs/tymly-statelint/commit/5a75e69debafb01e7e17f0a3d889b900753b48a6))
+
 # [1.36.0](https://github.com/wmfs/tymly-statelint/compare/v1.35.0...v1.36.0) (2021-01-06)
 
 
