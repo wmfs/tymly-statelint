@@ -1,3 +1,20 @@
+# [1.40.0](https://github.com/wmfs/tymly-statelint/compare/v1.39.0...v1.40.0) (2021-02-17)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/j2119 from 1.17.0 to 1.18.0 ([ae49d10](https://github.com/wmfs/tymly-statelint/commit/ae49d107fa41c2ebe4339556630295f3ecfba6e5))
+* **deps-dev:** bump chai from 4.2.0 to 4.3.0 ([01297f0](https://github.com/wmfs/tymly-statelint/commit/01297f0ab6090cda7eb875aec9030cafafbff7f2))
+* **deps-dev:** bump mocha from 8.2.1 to 8.3.0 ([444654c](https://github.com/wmfs/tymly-statelint/commit/444654cf323b30c3a61a70f84119c7c940559689))
+* **deps-dev:** bump semantic-release from 17.3.1 to 17.3.2 ([a27064f](https://github.com/wmfs/tymly-statelint/commit/a27064fe25f7c842674d0d253bbaae909b6fc967))
+* **deps-dev:** bump semantic-release from 17.3.2 to 17.3.3 ([29a5bb6](https://github.com/wmfs/tymly-statelint/commit/29a5bb694d5fc0d34ba1f853b4680ab1b3a81147))
+* **deps-dev:** bump semantic-release from 17.3.3 to 17.3.4 ([5062cef](https://github.com/wmfs/tymly-statelint/commit/5062cefc12748989181d9fdbd4775a4229d3c49c))
+* **deps-dev:** bump semantic-release from 17.3.4 to 17.3.5 ([eb9e8d5](https://github.com/wmfs/tymly-statelint/commit/eb9e8d55452a9a01de1d21c02829252ec5c93dd4))
+* **deps-dev:** bump semantic-release from 17.3.5 to 17.3.6 ([9a20baf](https://github.com/wmfs/tymly-statelint/commit/9a20baf13e3338e6f1f722ff0091a00575959f88))
+* **deps-dev:** bump semantic-release from 17.3.6 to 17.3.7 ([d149259](https://github.com/wmfs/tymly-statelint/commit/d149259e2c83b386d85fd76a242687894a45be2c))
+* **deps-dev:** bump semantic-release from 17.3.7 to 17.3.8 ([7e2df6f](https://github.com/wmfs/tymly-statelint/commit/7e2df6f281d5dcc14623641e50cf39aaa8c8f9fc))
+* **deps-dev:** bump semantic-release from 17.3.8 to 17.3.9 ([3a8bafd](https://github.com/wmfs/tymly-statelint/commit/3a8bafdc1a637171dd404c65badf725807887151))
+
 # [1.39.0](https://github.com/wmfs/tymly-statelint/compare/v1.38.0...v1.39.0) (2021-01-12)
 
 
