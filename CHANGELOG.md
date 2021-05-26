@@ -1,3 +1,22 @@
+# [1.42.0](https://github.com/wmfs/tymly-statelint/compare/v1.41.0...v1.42.0) (2021-05-26)
+
+
+### 🛠 Builds
+
+* **deps:** bump [@wmfs](https://github.com/wmfs)/j2119 from 1.18.0 to 1.19.0 ([a1e778b](https://github.com/wmfs/tymly-statelint/commit/a1e778b4afc07ac97ad743cd0d5d5c3d75172ae4))
+* **deps-dev:** bump chai from 4.3.0 to 4.3.1 ([4cef747](https://github.com/wmfs/tymly-statelint/commit/4cef7474a07cdb8169cd4887d94382e68e083570))
+* **deps-dev:** bump chai from 4.3.1 to 4.3.2 ([e2d4937](https://github.com/wmfs/tymly-statelint/commit/e2d4937df69ff31fddb7d0cebb7b50a0d8865160))
+* **deps-dev:** bump chai from 4.3.2 to 4.3.3 ([06d47ae](https://github.com/wmfs/tymly-statelint/commit/06d47ae00feb16c84a89f3bdfc2fd9322006dd2e))
+* **deps-dev:** bump chai from 4.3.3 to 4.3.4 ([08e0b4d](https://github.com/wmfs/tymly-statelint/commit/08e0b4d9a9933a43c9d535151744cc5f49b31b13))
+* **deps-dev:** bump codecov from 3.8.1 to 3.8.2 ([9f1e9ba](https://github.com/wmfs/tymly-statelint/commit/9f1e9ba1a1fae88c579ffe52f8e3c396b2ad5765))
+* **deps-dev:** bump mocha from 8.3.0 to 8.3.1 ([6cee3ed](https://github.com/wmfs/tymly-statelint/commit/6cee3ed2aca0b768129ed3de88b18a320466c15c))
+* **deps-dev:** bump mocha from 8.3.1 to 8.3.2 ([4354398](https://github.com/wmfs/tymly-statelint/commit/43543985726a1981c56ea6eaeb85284aa59eec31))
+* **deps-dev:** bump mocha from 8.3.2 to 8.4.0 ([ce98a00](https://github.com/wmfs/tymly-statelint/commit/ce98a00b70971e1a29191d424aca777dd7943466))
+* **deps-dev:** bump semantic-release from 17.3.9 to 17.4.0 ([8e166b6](https://github.com/wmfs/tymly-statelint/commit/8e166b6c343eb00e70993bdd142e59dacdd01239))
+* **deps-dev:** bump semantic-release from 17.4.0 to 17.4.1 ([6e95f83](https://github.com/wmfs/tymly-statelint/commit/6e95f839732a72a03d6c5fe1897d341f58af81fe))
+* **deps-dev:** bump semantic-release from 17.4.1 to 17.4.2 ([aa38c7c](https://github.com/wmfs/tymly-statelint/commit/aa38c7ce369cdd65868a755c0fdc40eab770dc6d))
+* **deps-dev:** bump semantic-release from 17.4.2 to 17.4.3 ([4f2fea0](https://github.com/wmfs/tymly-statelint/commit/4f2fea0f63adf684bfe121a183ed58becd17a8f7))
+
 # [1.41.0](https://github.com/wmfs/tymly-statelint/compare/v1.40.0...v1.41.0) (2021-02-24)
 
 
