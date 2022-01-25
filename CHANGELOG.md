@@ -1,3 +1,38 @@
+# [1.43.0](https://github.com/wmfs/tymly-statelint/compare/v1.42.0...v1.43.0) (2022-01-25)
+
+
+### 🛠 Builds
+
+* **deps-dev:** bump codecov from 3.8.2 to 3.8.3 ([804b250](https://github.com/wmfs/tymly-statelint/commit/804b2507de699fb09d0a6b831cf0b5467da0c5e8))
+* **deps-dev:** bump mocha from 8.4.0 to 9.0.0 ([9ec9d11](https://github.com/wmfs/tymly-statelint/commit/9ec9d11ff93762af7f3b9f78b75db8f50b1f82a1))
+* **deps-dev:** bump mocha from 9.0.0 to 9.0.1 ([f6a70c6](https://github.com/wmfs/tymly-statelint/commit/f6a70c6f29850cc68ff677c07f9148af3ada9bfc))
+* **deps-dev:** bump mocha from 9.0.1 to 9.0.2 ([a1c14cb](https://github.com/wmfs/tymly-statelint/commit/a1c14cbafac92b192dcc737bc3c9e6e914f92f83))
+* **deps-dev:** bump mocha from 9.0.2 to 9.0.3 ([9469f2d](https://github.com/wmfs/tymly-statelint/commit/9469f2d8a13fa518f30ea6adc3f0b6fed66f009d))
+* **deps-dev:** bump semantic-release from 17.4.3 to 17.4.4 ([65fe763](https://github.com/wmfs/tymly-statelint/commit/65fe763731580657172e20e51facd2a6a245cdfe))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6 ([7fb308c](https://github.com/wmfs/tymly-statelint/commit/7fb308c4c3337b923b40c7b3336a38546a212e05))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/git to v10 ([2799786](https://github.com/wmfs/tymly-statelint/commit/279978603027563694ccbf6208e7d251b13cb88c))
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/git to v9.0.1 ([6d24921](https://github.com/wmfs/tymly-statelint/commit/6d24921a535e79054ba6194cabb0b227f1668ab2))
+* **deps-dev:** update dependency mocha to v9.1.0 ([7422407](https://github.com/wmfs/tymly-statelint/commit/74224078d0bada2c02feff3502ba5088a6b56ed5))
+* **deps-dev:** update dependency mocha to v9.1.1 ([24e315e](https://github.com/wmfs/tymly-statelint/commit/24e315e89e6df86151c7676c48c465a267deffb6))
+* **deps-dev:** update dependency mocha to v9.1.2 ([c0231fb](https://github.com/wmfs/tymly-statelint/commit/c0231fbad7e9cabf89972c8b4c7f30ee76cc79c8))
+* **deps-dev:** update dependency mocha to v9.1.3 ([538aac4](https://github.com/wmfs/tymly-statelint/commit/538aac4bb945b87aad7dcc3ecfe861b267214f9d))
+* **deps-dev:** update dependency mocha to v9.1.4 ([68b0ff0](https://github.com/wmfs/tymly-statelint/commit/68b0ff0eab47a3cf1f54f854385aa922844998bf))
+* **deps-dev:** update dependency mocha to v9.2.0 ([d246b92](https://github.com/wmfs/tymly-statelint/commit/d246b92df159973e915ac42aa68e61211b5b5ab1))
+* **deps-dev:** update dependency semantic-release to v17.4.5 ([2f69715](https://github.com/wmfs/tymly-statelint/commit/2f69715c2d9648e9eec61cfbbfc89e957a90cffe))
+* **deps-dev:** update dependency semantic-release to v17.4.6 ([44213e9](https://github.com/wmfs/tymly-statelint/commit/44213e964668d045f7ad80f3f1f9473ceed1ac06))
+* **deps-dev:** update dependency semantic-release to v17.4.7 ([cd2c103](https://github.com/wmfs/tymly-statelint/commit/cd2c10355674df52237ce86ec59ce1a07ef8100b))
+* **deps-dev:** update dependency semantic-release to v18 ([f8673ef](https://github.com/wmfs/tymly-statelint/commit/f8673ef2f62499fc5c4f2af4295c454146a53785))
+* **deps-dev:** update dependency semantic-release to v18.0.1 ([f677637](https://github.com/wmfs/tymly-statelint/commit/f677637821673cb8ea7bb52e8d55cb36fc255c77))
+* **deps-dev:** update dependency semantic-release to v19 ([5cb1b98](https://github.com/wmfs/tymly-statelint/commit/5cb1b98cf4d51739f171b3502a33670d84289cc4))
+* **deps-dev:** update dependency standard to v16.0.4 ([0f2ddaa](https://github.com/wmfs/tymly-statelint/commit/0f2ddaa496b59833bb64f92d1151d9bb01113ff3))
+* **deps-dev:** update semantic-release monorepo ([bb4053a](https://github.com/wmfs/tymly-statelint/commit/bb4053a159736d7be9d334036c7a7362c9010bc0))
+* **deps:** update dependency ajv to v8 ([87c5fa9](https://github.com/wmfs/tymly-statelint/commit/87c5fa9f0d0a3c259916789570e40cbb7bed0c18))
+
+
+### ♻️ Chores
+
+* add renovate config [ch6600] ([2e12df6](https://github.com/wmfs/tymly-statelint/commit/2e12df6cf43442be0ce4629413a375c51ba72a00))
+
 # [1.42.0](https://github.com/wmfs/tymly-statelint/compare/v1.41.0...v1.42.0) (2021-05-26)
 
 
