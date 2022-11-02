@@ -1,3 +1,10 @@
+# [1.46.0](https://github.com/wmfs/tymly-statelint/compare/v1.45.0...v1.46.0) (2022-11-02)
+
+
+### 🛠 Builds
+
+* **deps:** update dependency [@wmfs](https://github.com/wmfs)/j2119 to v1.23.0 ([1260edc](https://github.com/wmfs/tymly-statelint/commit/1260edcec6295e1fe46fa074e4254d7596122437))
+
 # [1.45.0](https://github.com/wmfs/tymly-statelint/compare/v1.44.0...v1.45.0) (2022-11-02)
 
 
