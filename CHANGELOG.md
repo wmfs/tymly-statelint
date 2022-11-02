@@ -1,3 +1,18 @@
+# [1.45.0](https://github.com/wmfs/tymly-statelint/compare/v1.44.0...v1.45.0) (2022-11-02)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency chai to v4.3.6 ([9159b70](https://github.com/wmfs/tymly-statelint/commit/9159b7006a40f56a9bc394d6ebd4961006e39fda))
+* **deps-dev:** update dependency mocha to v10 ([0f7cd5f](https://github.com/wmfs/tymly-statelint/commit/0f7cd5f4af8d927c64cf0f33c1bd0752c4fa3372))
+* **deps-dev:** update dependency mocha to v10.1.0 ([d09ce3b](https://github.com/wmfs/tymly-statelint/commit/d09ce3b368d6fe7256c0706fedfbc8f389dfbea4))
+* **deps-dev:** update dependency mocha to v9.2.1 ([8b21d13](https://github.com/wmfs/tymly-statelint/commit/8b21d13adb1707452f24a37477ebdef133db2743))
+* **deps-dev:** update dependency mocha to v9.2.2 ([af3158b](https://github.com/wmfs/tymly-statelint/commit/af3158b33884fc21946736dab50f4666550d3fb3))
+* **deps-dev:** update dependency semantic-release to v19.0.3 ([1c07999](https://github.com/wmfs/tymly-statelint/commit/1c07999c9de33569b1fe80814520bf27254ec114))
+* **deps-dev:** update dependency semantic-release to v19.0.5 ([81032ab](https://github.com/wmfs/tymly-statelint/commit/81032ab02e2a48a0a22f77defe745c630369a7e8))
+* **deps-dev:** update dependency standard to v17 ([de6e7ec](https://github.com/wmfs/tymly-statelint/commit/de6e7ecf65c9c4c29f70e974293b4e62b28d1dea))
+* **deps:** update dependency ajv to v8.11.0 ([da2bba1](https://github.com/wmfs/tymly-statelint/commit/da2bba1d77cf9b52e95c33fa09e35f1f7aeeafe4))
+
 # [1.44.0](https://github.com/wmfs/tymly-statelint/compare/v1.43.0...v1.44.0) (2022-01-25)
 
 
