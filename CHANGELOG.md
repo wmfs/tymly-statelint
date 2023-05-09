@@ -1,3 +1,15 @@
+# [1.50.0](https://github.com/wmfs/tymly-statelint/compare/v1.49.0...v1.50.0) (2023-05-09)
+
+
+### 🛠 Builds
+
+* **deps-dev:** update dependency [@semantic-release](https://github.com/semantic-release)/changelog to v6.0.3 ([9297ae5](https://github.com/wmfs/tymly-statelint/commit/9297ae54cfcf70fb26a74d07678ecf65625ebf21))
+* **deps-dev:** update dependency semantic-release to v20.1.3 ([4552cd2](https://github.com/wmfs/tymly-statelint/commit/4552cd2c64ed0942408b1bddc6ea80afc4ad16f3))
+* **deps-dev:** update dependency semantic-release to v21 ([5bdfb02](https://github.com/wmfs/tymly-statelint/commit/5bdfb020688d08ef06e9f0e923bd11bd1901d7d1))
+* **deps-dev:** update dependency semantic-release to v21.0.1 ([ae45ee3](https://github.com/wmfs/tymly-statelint/commit/ae45ee33909d6881b435cc6a75929824c3a26b76))
+* **deps-dev:** update dependency semantic-release to v21.0.2 ([b1849cf](https://github.com/wmfs/tymly-statelint/commit/b1849cfecca127db86ac038f9d78546a8b46d619))
+* **deps:** update dependency [@wmfs](https://github.com/wmfs)/j2119 to v1.25.0 ([986df46](https://github.com/wmfs/tymly-statelint/commit/986df46581fd1ae624afd01d9c6353e67476927d))
+
 # [1.49.0](https://github.com/wmfs/tymly-statelint/compare/v1.48.0...v1.49.0) (2023-03-13)
 
 
