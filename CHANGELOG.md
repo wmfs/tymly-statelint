@@ -1,3 +1,5 @@
+# [1.56.0](https://github.com/wmfs/tymly-statelint/compare/v1.55.0...v1.56.0) (2024-11-05)
+
 # [1.55.0](https://github.com/wmfs/tymly-statelint/compare/v1.54.0...v1.55.0) (2024-11-04)
 
 # [1.54.0](https://github.com/wmfs/tymly-statelint/compare/v1.53.0...v1.54.0) (2024-11-04)
