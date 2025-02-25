@@ -1,3 +1,15 @@
+## [1.57.0](https://github.com/wmfs/tymly-statelint/compare/v1.56.0...v1.57.0) (2025-02-25)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** [sc-29160] Resolve issue with semantic-release changelog notes ([#356](https://github.com/wmfs/tymly-statelint/issues/356)) ([2ad065c](https://github.com/wmfs/tymly-statelint/commit/2ad065cf92ccc5ca045ac776c77ad8928aad9542))
+* **deps-dev:** update dependency mocha to v11 ([#354](https://github.com/wmfs/tymly-statelint/issues/354)) ([67f0617](https://github.com/wmfs/tymly-statelint/commit/67f061764cf22fd5d255132ea80a1983da56cd1a))
+* **deps-dev:** update dependency mocha to v11.1.0 ([#357](https://github.com/wmfs/tymly-statelint/issues/357)) ([e218c02](https://github.com/wmfs/tymly-statelint/commit/e218c02986a9785f235d36c7562aa861e0f2c609))
+* **deps-dev:** update dependency semantic-release to v24.2.1 ([#355](https://github.com/wmfs/tymly-statelint/issues/355)) ([34456e1](https://github.com/wmfs/tymly-statelint/commit/34456e1930699c31adce2998790c5a523e048338))
+* **deps-dev:** update dependency semantic-release to v24.2.2 ([#358](https://github.com/wmfs/tymly-statelint/issues/358)) ([681e74d](https://github.com/wmfs/tymly-statelint/commit/681e74d81858e5aacb36cc84fe1c737ffa67da3a))
+* **deps-dev:** update dependency semantic-release to v24.2.3 ([#359](https://github.com/wmfs/tymly-statelint/issues/359)) ([c2045b1](https://github.com/wmfs/tymly-statelint/commit/c2045b1f76804585feca36b9d877d2f9d82afb6b))
+* **deps:** update dependency @wmfs/j2119 to v1.27.0 ([#360](https://github.com/wmfs/tymly-statelint/issues/360)) ([7b7f307](https://github.com/wmfs/tymly-statelint/commit/7b7f307eb41cf5e706580c231a442fb31f3765cc))
+
 # [1.56.0](https://github.com/wmfs/tymly-statelint/compare/v1.55.0...v1.56.0) (2024-11-05)
 
 # [1.55.0](https://github.com/wmfs/tymly-statelint/compare/v1.54.0...v1.55.0) (2024-11-04)
