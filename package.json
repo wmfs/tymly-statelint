@@ -23,7 +23,7 @@
     "tymly-statelint": "bin/tymly-statelint.js"
   },
   "dependencies": {
-    "@wmfs/j2119": "1.28.0",
+    "@wmfs/j2119": "1.29.0",
     "@wmfs/statelint": "1.28.0",
     "ajv": "8.17.1",
     "lodash.clonedeep": "4.5.0",
