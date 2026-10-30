@@ -1,3 +1,21 @@
+## [1.65.0](https://github.com/wmfs/tymly-statelint/compare/v1.64.1...v1.65.0) (2026-10-30)
+
+### Build system dependencies :hammer:
+
+* **deps-dev:** fix conventionalcommit versions [sc-34125] ([17b7e16](https://github.com/wmfs/tymly-statelint/commit/17b7e16144fb1b6ef95dc8e2f70bf7e5eb2f1180))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v10.4.0 ([#419](https://github.com/wmfs/tymly-statelint/issues/419)) ([d4d06b7](https://github.com/wmfs/tymly-statelint/commit/d4d06b7864492ab07a682a4435e38411947a8b73))
+* **deps-dev:** update dependency conventional-changelog-conventionalcommits to v10.4.1 ([#424](https://github.com/wmfs/tymly-statelint/issues/424)) ([df0ba10](https://github.com/wmfs/tymly-statelint/commit/df0ba10d65fd7b2dcd295b3793697346e141760b))
+* **deps-dev:** update dependency mocha to v12 ([#420](https://github.com/wmfs/tymly-statelint/issues/420)) ([50aaeb9](https://github.com/wmfs/tymly-statelint/commit/50aaeb92f3188428633858735527268cacae6a8a))
+* **deps-dev:** update dependency mocha to v12.0.1 ([#421](https://github.com/wmfs/tymly-statelint/issues/421)) ([2516498](https://github.com/wmfs/tymly-statelint/commit/251649817a0d17e360db04b3b5a170f0541d9455))
+* **deps-dev:** update dependency mocha to v12.0.2 ([#422](https://github.com/wmfs/tymly-statelint/issues/422)) ([f634992](https://github.com/wmfs/tymly-statelint/commit/f634992046b57ac2b691efe570069a1c7d234599))
+* **deps-dev:** update dependency mocha to v12.0.3 ([#423](https://github.com/wmfs/tymly-statelint/issues/423)) ([3b77c19](https://github.com/wmfs/tymly-statelint/commit/3b77c19a7c2dc27c367bd738a2081ea08b4c73b3))
+* **deps:** update dependency ajv to v8.18.0 [security] ([#396](https://github.com/wmfs/tymly-statelint/issues/396)) ([7d1fa4f](https://github.com/wmfs/tymly-statelint/commit/7d1fa4f498887593548d0b5dca127f9ca110b7f2))
+
+### CICD Configuration Changes :construction_worker:
+
+* use github-app-token orb for release token [sc-34101] ([#428](https://github.com/wmfs/tymly-statelint/issues/428)) ([2cfdd48](https://github.com/wmfs/tymly-statelint/commit/2cfdd48f04a33dcf2ebef126cd44b8215a5ccb6b))
+* use shared renovate preset [sc-34117] ([#426](https://github.com/wmfs/tymly-statelint/issues/426)) ([028357c](https://github.com/wmfs/tymly-statelint/commit/028357c36b0d123b931cc9c5c032698c0ef9fe10))
+
 ## [1.64.1](https://github.com/wmfs/tymly-statelint/compare/v1.64.0...v1.64.1) (2026-08-13)
 
 ## [1.64.0](https://github.com/wmfs/tymly-statelint/compare/v1.63.0...v1.64.0) (2025-07-11)
