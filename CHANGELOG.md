@@ -1,3 +1,9 @@
+## [1.66.0](https://github.com/wmfs/tymly-statelint/compare/v1.65.0...v1.66.0) (2026-11-02)
+
+### Build system dependencies :hammer:
+
+* **deps:** update dependency ajv to v8.20.0 ([#429](https://github.com/wmfs/tymly-statelint/issues/429)) ([b86dc4c](https://github.com/wmfs/tymly-statelint/commit/b86dc4cd3cda16a97f109b0a00977f30a52cf7b1))
+
 ## [1.65.0](https://github.com/wmfs/tymly-statelint/compare/v1.64.1...v1.65.0) (2026-10-30)
 
 ### Build system dependencies :hammer:
