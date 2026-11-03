@@ -1,3 +1,9 @@
+## [1.68.0](https://github.com/wmfs/tymly-statelint/compare/v1.67.0...v1.68.0) (2026-11-03)
+
+### Build system dependencies :hammer:
+
+* **deps:** update [@wmfs](https://github.com/wmfs) packages ([#430](https://github.com/wmfs/tymly-statelint/issues/430)) ([9cff6a9](https://github.com/wmfs/tymly-statelint/commit/9cff6a97e2bfa7e51a62b8c57e709945d8bfcfa3))
+
 ## [1.67.0](https://github.com/wmfs/tymly-statelint/compare/v1.66.0...v1.67.0) (2026-11-02)
 
 ### Build system dependencies :hammer:
